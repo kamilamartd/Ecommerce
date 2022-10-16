@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notShein</title>
+
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/home.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navBar"></nav>
+    <header id="header"></header>
+
+    <section id="banner">
+        <div id="text">
+            <div class="colection">
+                <h3>VERÃO 2022</h3>
+            </div>
+            <h1>NOVA COLEÇÃO</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#" class="button2"> COMPRAR</a>
+        </div>
+    </section>
+
+    <section id="category">
+        <h2 class="h2">PARA TODOS</h2>
+        <p class="description">Desde a camiseta, até o boné de todo dia</p>   
+
+        <div id="container">
+            <div class="card">
+                <img src="../images/modelos/sessaoMasculina.png" alt="menino usando jaqueta e boné">
+                <div class="button3"> MASCULINO </div>
+            </div>
+
+            <div class="card">
+                <img src="../images/modelos/sessaoFeminina.png" alt="mulher loira usando blusa cinza">
+                <div class="button3"> FEMININO </div>
+            </div>
+            
+            <div class="container-sub">
+                <div class="card sub">
+                    <img src="../images/modelos/sessaoAcessorios.png" alt="mulher usando calça bege">
+                    <div class="button3"> ACESSÓRIOS </div>
+                </div>
+    
+                <div class="card sub">
+                    <img src="../images/modelos/sessaoInfantil.png" alt="menino usando camisa amarela">
+                    <div class="button3"> INFANTIL </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <p class="description">os amados e</p>
+        <h2 class="h2">MAIS PROCURADOS</h2>
+        <div class="grid">
+            <div class="item">
+                <img src="../images/modelos/model1.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model2.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model3.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model4.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model5.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model6.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model7.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+            <div class="item">
+                <img src="../images/modelos/model8.png" alt="mulher nega usando short lilás">
+                <p class="h4">Nome da peça</p>
+                <p class="h5">tipo de corte</p>
+                <p class="price">R$00,00</p>
+
+                <!--<div class="colors">-->
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer"></footer>
+
+    <script type="text/javascript">
+        //carregaDocumento("navBar.html", "#navBar");
+        carregaDocumento("header.html", "#header");
+        carregaDocumento("footer.html", "#footer");
+
+
+        function carregaDocumento(arquivo, target)
+        {
+            var el = document.querySelector(target);
+
+            //Se o elemento não existir então não requisita
+            if (!el) return;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", arquivo, true);
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState == 4 && xhr.status >= 200 && xhr.status < 300){
+                    el.innerHTML = xhr.responseText;
+                }
+            };
+
+            xhr.send(null);
+        }
+    </script>
+</body>
+</html>

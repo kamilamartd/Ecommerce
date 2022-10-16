@@ -1,0 +1,88 @@
+body {
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 0 7rem;
+}
+
+.search {
+    padding: 4rem 0 7rem 0;
+}
+
+.search,
+.form,
+.filter,
+.pages,
+.buttons-pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.search .h5 {
+    font-weight: 700;
+    color: var(--cinza-escuro);
+}
+
+.search form :nth-child(2) {
+    border: 2px solid var(--cinza);
+    border-radius: .3rem;
+}
+
+.search button {
+    font-weight: 600;
+    margin-left: 1rem;
+    padding: .9rem 2.2rem;
+}
+
+.grid {
+    grid-column-gap: 3rem;
+}
+
+.pages {
+    justify-content: center;
+}
+
+.buttons-pages {
+    border-radius: .3rem;
+    width: 1fr;
+    margin: 8rem 0;
+}
+
+.button-page {
+    padding: 1.5rem 2rem;
+    border: 2px solid var(--cinza);
+    transition: .2ms;
+}
+
+.button-page:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.button-page .h5 {
+    font-weight: 600;
+    color: var(--azul-claro);
+}
+
+.selected {
+    background-color: var(--azul-claro);
+    border: 2px solid var(--azul-claro);
+}
+
+.selected .h5 {
+    color: var(--branco);
+}
+
+.back {
+    background-color: var(--cinza);
+    border-radius: .3rem 0 0 .3rem;
+}
+
+.back .h5 {
+    color: var(--cinza-escuro);
+}
+
+.next {
+    border-radius: 0 .3rem .3rem 0;
+}

@@ -1,0 +1,82 @@
+header {
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--branco);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    color: var(--preto);
+}
+
+#simbolo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: var(--preto);
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+}
+
+#menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--cinza-escuro);
+    transition: .3ms;
+}
+
+#menu a:nth-child(1) {
+    margin-right: 1rem;
+}
+
+#menu a:hover {
+    font-weight: 600;
+}
+
+#user {
+    display: flex;
+    flex-direction: row;
+}
+
+#user p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--azul-claro);
+}
+
+#user #carrinho {
+    margin-left: 2rem;
+}
+
+#user a,
+#user .a {
+    background: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    transition: .2s;
+}
+
+#user a:hover,
+#user .a:hover {
+    filter: brightness(1.1);
+}
+
+#user a img,
+#user .a img {
+    margin-right: .5rem;
+}

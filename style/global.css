@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    --branco: #F9F9F9;
+    --cinza-claro: #FAFAFA;
+    --cinza: #E6E6E6;
+    --cinza-escuro: #737373;
+    --azul-claro: #23A6F0;
+    --azul-escuro: #10557C;
+    --preto: #252B42;
+}
+
+body {
+    height: 100vh;
+    /*pra não ter rolagem*/
+    display: flex;
+}
+
+.sr-only {
+    position: absolute;
+    /*respeita somente um elemento. deixando ele sobre todos os outros*/
+    height: 1px;
+    width: 1px;
+
+    padding: 0;
+    margin: -1px;
+    /* ficando na parte superior, que não consiguimos ver*/
+
+    overflow: hidden;
+    /*sem barra de rolagem*/
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.link1 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: underline;
+    color: var(--branco)
+}
+
+.button1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    padding: .9rem 3.3rem;
+    border-radius: .3rem;
+
+    color: var(--branco);
+    background-color: var(--azul-claro);
+
+    transition: filter .2s;
+    cursor: pointer;
+}
+
+button:hover,
+.button1:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+
+input,
+.input,
+select,
+option {
+    font-weight: 400;
+    font-size: 1.1rem;
+
+    padding: .9rem 1.7rem;
+    border-radius: .3rem;
+
+    color: var(--cinza-escuro);
+    background-color: var(--branco);
+
+    outline: none;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+
+    width: fit-content;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 4.8rem;
+
+    width: fit-content;
+}
+
+.button2 {
+    padding: 1rem 2rem;
+    background-color: var(--azul-escuro);
+    border-radius: .2rem;
+
+    font-weight: bold;
+    color: var(--branco);
+    font-size: 1.4rem;
+
+    transition: .2ms;
+}
+
+.button2:hover {
+    filter: brightness(1.1);
+}
+
+.h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.h4 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--preto);
+}
+
+.h5 {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--cinza-escuro);
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--azul-claro);
+}
+
+.description {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: var(--cinza-escuro);
+}
+
+.button3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--preto);
+
+    width: fit-content;
+    padding: 1rem 2rem;
+    background-color: var(--branco);
+
+    transition: .2ms;
+}
+
+.button3:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item .h4 {
+    margin-top: .8rem;
+    margin-bottom: .2rem;
+}
+
+.item .price {
+    margin-top: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 7rem;
+}

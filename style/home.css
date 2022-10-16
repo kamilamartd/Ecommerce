@@ -1,0 +1,116 @@
+body {
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 0 7rem;
+}
+
+/* BANNER */
+#banner {
+    background-color: var(--azul-claro);
+    margin: auto -7rem;
+    padding: 7rem 10rem;
+}
+
+#text {
+    justify-content: center;
+    align-items: center;
+}
+
+#text h1 {
+    color: var(--branco);
+
+    margin-top: 1.3rem;
+    margin-bottom: 1.3rem;
+}
+
+#text p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: medium;
+    font-size: 1.3rem;
+    color: var(--branco);
+    max-width: 36rem;
+
+    margin-bottom: 6rem;
+}
+
+.colection {
+    padding: .5rem 1rem;
+    background-color: var(--azul-escuro);
+    width: fit-content;
+}
+
+.colection h3 {
+    color: var(--branco);
+}
+
+/*CATEGORY*/
+#category,
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#category .h2 {
+    margin-top: 7rem;
+    color: var(--preto);
+}
+
+#category .description {
+    margin-top: 1rem;
+    margin-bottom: 4.8rem;
+}
+
+.card {
+    position: relative;
+    height: fit-content;
+}
+
+.card img {
+    width: fit-content;
+}
+
+.card .button3 {
+    position: absolute;
+    margin-left: 1rem;
+    top: 85%;
+}
+
+.sub .button3 {
+    position: absolute;
+    margin-left: 1rem;
+    top: 70%;
+}
+
+#container {
+    display: flex;
+}
+
+.card {
+    margin-right: 1rem;
+}
+
+.container-sub {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sub .sub:nth-child(1) {
+    margin-bottom: .7rem;
+}
+
+/*PRODUCTS*/
+#products .description {
+    margin-top: 7rem;
+}
+
+#products .h2 {
+    margin-top: 1rem;
+    margin-bottom: 4.8rem;
+    color: var(--preto);
+}
+
+.grid {
+    margin-bottom: 8rem;
+}
