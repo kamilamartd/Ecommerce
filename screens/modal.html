@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro - notShein</title>
+
+    <link rel="stylesheet" href="../style/global.css" />
+    <link rel="stylesheet" href="../style/modal.css" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- MODAL LOGIN -->
+    <div class="modal">
+      <div class="container-modal">
+        <h2>Login</h2>
+
+        <div id="form">
+          <form action="" method="POST">
+            <div class="form">
+              <label class="sr-only" for="email">Insira seu e-mail</label>
+              <input
+                type="email"
+                class="input"
+                name="emailLogin"
+                id="emailLogin"
+                placeholder="E-mail"
+              />
+
+              <label class="sr-only" for="pass">Insira sua senha</label>
+              <input
+                type="password"
+                class="input"
+                name="passLogin"
+                id="passLogin"
+                placeholder="Senha"
+              />
+            </div>
+
+            <div id="actions">
+              <a class="link1" href="../screens/signup.html">Me cadastrar</a>
+
+              <button type="submit" class="button1">Entrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL CADASTRO -->
+    <div class="modal active">
+      <div class="container-modal">
+        <h2>Cadastro</h2>
+
+        <div id="form">
+          <form action="" method="POST">
+            <div class="form">
+              <label class="sr-only" for="name">Insira seu nome</label>
+              <input
+                type="text"
+                class="input"
+                name="name"
+                id="name"
+                placeholder="Nome"
+              />
+
+              <label class="sr-only" for="cpf">Insira seu CPF</label>
+              <input
+                type="text"
+                class="input"
+                name="cpf"
+                id="cpf"
+                placeholder="CPF"
+              />
+            </div>
+
+            <label class="sr-only" for="email">Insira seu e-mail</label>
+            <input
+              type="text"
+              class="input"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+
+            <label class="sr-only" for="pass">Insira sua senha</label>
+            <input
+              type="password"
+              class="input"
+              name="pass"
+              id="pass"
+              placeholder="Senha"
+            />
+
+            <label class="sr-only" for="passConfirm">Confirme sua senha</label>
+            <input
+              type="password"
+              class="input"
+              name="passConfirm"
+              id="passConfirm"
+              placeholder="Confirme a senha"
+            />
+
+            <div id="actions">
+              <a class="link1" href="../screens/login.html">Fazer login</a>
+
+              <button type="submit" class="button1">Me cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL JÁ CADASTRADO -->
+    <div class="modal">
+      <div class="container-modal">
+        <h2 class="errorAutentic">Usuário já cadastrado</h2>
+
+        <p>Você já pode realizar o login</p>
+
+        <a class="button1" href="#">Fazer login</a>
+      </div>
+    </div>
+
+    <!-- MODAL NÃO CADASTRADO -->
+    <div class="modal">
+      <div class="container-modal">
+        <h2 class="errorAutentic">Usuário não cadastrado</h2>
+
+        <p>Cadastre-se para que possa realizar o login</p>
+
+        <a class="button1" href="#">Cadastre-se</a>
+      </div>
+    </div>
+  </body>
+</html>

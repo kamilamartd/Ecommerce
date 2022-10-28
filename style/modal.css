@@ -38,6 +38,10 @@ h2 {
     color: var(--branco);
 }
 
+.errorAutentic{
+    text-align: center;
+}
+
 #form {
     padding-top: 1.9rem;
     /*padding-bottom: 3.6rem;*/
@@ -63,4 +67,16 @@ input {
     align-items: baseline;
 
     padding-top: 3.6rem;
+}
+
+.container-modal p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: var(--branco);
+
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+
+    text-align: center;
 }
