@@ -1,0 +1,66 @@
+body {
+    flex-direction: column;
+    background-color: var(--branco);
+    padding: 0 7rem;
+}
+
+section.product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5rem;
+    padding: 4rem 0 5rem;
+}
+
+.product .description{
+    margin-left: 5rem;
+    width: 35%;
+}
+
+.description .inicials .h5{
+    font-size: 1.6rem;
+    margin-bottom: .8rem;
+}
+
+.description .inicials .h2{
+    font-size: 2.4rem;
+    color: var(--preto);
+}
+
+.description .inicials .h4{
+    color: var(--azul-claro);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.description .text{
+    line-height: 1.5rem;
+    margin: 3rem 0 2rem;
+
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--cinza);
+}
+
+.description .button1{
+    margin-top: 3.3rem;
+}
+
+section.product-description{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    padding-bottom: 5rem;
+    margin-bottom: 7rem;
+}
+
+.product-description .h2{
+    margin-bottom: 2rem;
+}
+
+.product-description p{
+    color: var(--cinza-escuro);
+    width: 90%;
+}
+

@@ -5,7 +5,7 @@ body {
 }
 
 .search {
-    padding: 4rem 0 7rem 0;
+    padding: 4rem 0 7rem;
 }
 
 .search,
@@ -85,4 +85,8 @@ body {
 
 .next {
     border-radius: 0 .3rem .3rem 0;
+}
+
+.colors{
+    margin-top: 1rem;
 }

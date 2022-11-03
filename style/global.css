@@ -49,7 +49,7 @@ body {
 
 .button1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
 
@@ -187,4 +187,37 @@ h1 {
     grid-template-rows: 1fr 1fr;
     grid-column-gap: 1.5rem;
     grid-row-gap: 7rem;
+}
+
+.colors{
+    display: flex;
+    flex-direction: row;
+}
+
+.colors div:nth-child(1),
+.colors div:nth-child(2),
+.colors div:nth-child(3){
+    margin-right: .7rem;
+}
+
+.colors .color{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+.colors .c1{
+    background-color: var(--azul-claro); 
+}
+
+.colors .c2{
+    background-color: #2DC071; 
+}
+
+.colors .c3{
+    background-color: #E77C40;  
+}
+
+.colors .c4{
+    background-color: var(--preto);   
 }
